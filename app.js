@@ -13,7 +13,8 @@ const data = async() => {
 
 //    console.log(myDay[i].firstElementChild);
 console.log(myDay[i].firstElementChild.style.height =`${(amount*2).toFixed(0)}px`)
-myDay[i].firstElementChild.style.backgroundColor ="red";
+myDay[i].firstElementChild.style.backgroundColor ="hsl(10, 79%, 65%)";
+
        
 
       
