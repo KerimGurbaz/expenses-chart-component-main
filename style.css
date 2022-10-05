@@ -32,8 +32,8 @@ body {
 .days_li {
   display: flex;
   justify-content: center;
-
   align-items: flex-end;
+  text-align: center;
 }
 
 .days_li li {
@@ -43,6 +43,14 @@ body {
 }
 .days_li li div:hover {
   opacity: 0.5;
+}
+
+.days_li li div {
+  width: 1.2rem;
+  justify-items: center;
+}
+.days_li li span {
+  width: 100%;
 }
 
 .bottom {
@@ -94,5 +102,25 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 1rem;
+  }
+  .container {
+    width: 20rem;
+    margin: 2rem auto;
+  }
+  .days_li li {
+    padding: 0.5rem;
+  }
+  .total {
+    padding: 0.1rem 0;
+  }
+  .total span {
+    font-size: 1.5rem;
+    color: black;
   }
 }
