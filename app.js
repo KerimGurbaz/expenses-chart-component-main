@@ -1,18 +1,24 @@
+const myDay = document.querySelectorAll(".days_li li");
 const data = async() => {
     const res = await fetch("data.json")
     console.log(res);
     const data = await res.json()
     console.log(data);
    
-   let a =  data.forEach(x => { day, amount} )
-   console.log(a);
-
 
       const {day, amount} = data;
-      
+      data.map(({day, amount},i)=>{
+        console.log(`${day} ${amount} ${i}`)
+       console.log( `myDay[${i}]`);
 
-      console.log(day);
-      console.log(amount);
+//    console.log(myDay[i].firstElementChild);
+console.log(myDay[i].firstElementChild.style.height =`${(amount*2).toFixed(0)}px`)
+myDay[i].firstElementChild.style.backgroundColor ="red";
+       
+
+      
+      })
+      
 }
 
 console.log(data());
