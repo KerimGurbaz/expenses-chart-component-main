@@ -5,10 +5,7 @@ const data = async() => {
     console.log(res);
     const data = await res.json()
     console.log(data);
-
-      const {day, amount} = data;
-
-
+    
       data.map(({day, amount},i)=>{
         console.log(`${day} ${amount} ${i}`)
        console.log( `myDay[${i}]`);
